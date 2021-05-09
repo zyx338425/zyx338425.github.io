@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+    <title>xiaojiu's Homepage</title>
+    <meta name="description" content="xiaojiu's Homepage">
+    <meta name="keywords" content="xiaojiu,Homepage,xiaojiube,Java,Spring,个人主页,个人博客,博客">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="static/image/favicon.ico">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+        if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+            alert('朋友，上古IE浏览器不支持呢~');
+        }
+    </script>
+</head>
+<body>
+<div id="body-wrap">
+    <nav class="not_index_bg" id="nav" style="background-image:url(https://api.ixiaowai.cn/api/api.php)">
+        <div id="page_site-info">
+            <div id="site-title">
+                <span class="blogtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    new Typed(".blogtitle", {
+                        strings: [
+                            'Talk is cheap',
+                            'Show me the code'
+                        ],
+                        startDelay: 300,
+                        typeSpeed: 80,
+                        loop: true,
+                        backSpeed: 20,
+                        showCursor: true
+                    });
+                </script>
+            </div>
+        </div>
+    </nav>
+    <main id="content-outer">
+        <div class="layout_page" id="content-inner">
+            <div class="aside_content" id="aside_content">
+                <div class="card-widget card-info">
+                    <div class="card-content">
+                        <div class="card-info-avatar is-center">
+                            <img class="avatar-img" src="static/image/xiaojiu.jpg" alt="avatar">
+                            <div class="author-info__name">xiaojiu</div>
+                            <div class="author-info__description">一个普通人类，00后的大叼毛</div>
+                        </div>
+                        <div class="card-info-social-icons is-center">
+                            <a class="social-icon" href="https://github.com/zyx338425" target="_blank">
+                                <i class="fa fa-github"></i>
+                            </a>
+                            <a class="social-icon" href="http://t.me/xiaojiuDIY" target="_blank">
+                                <i class="fa fa-telegram"></i>
+                            </a>
+                            <a class="social-icon" href="https://wpa.qq.com/msgrd?v=3&uin=728505950&site=qq&menu=yes" target="_blank">
+                                <i class="fa fa-qq"></i>
+                            </a>
+                            <a class="social-icon" href="static/image/weixin.png" target="_blank">
+                                <i class="fa fa-wechat"></i>
+                            </a>
+                            <a class="social-icon" href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=HiksJisuKycrLl5vbzB9cXM" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-widget card-announcement">
+                    <div class="card-content">
+                        <div class="item-headline">
+                            <i class="fa fa-bullhorn"></i>
+                            <span>一言</span>
+                        </div>
+                        <div id="hitokoto"></div>
+                    </div>
+                </div>
+                <div class="card-widget card-announcement">
+                    <div class="card-content">
+                        <div class="item-headline">
+                            <i class="fa fa-calendar"></i>
+                            <span>今日诗词</span>
+                        </div>
+                        <div id="jinrishici-sentence"></div>
+                    </div>
+                </div>
+
+                <div class="card-widget card-webinfo">
+                    <div class="card-content">
+                        <div class="item-headline">
+                            <i class="fa fa-line-chart"></i>
+                            <span>站点信息</span>
+                        </div>
+                        <div class="webinfo">
+                            <div class="webinfo-item">
+                                <div class="webinfo-site-uv-name">本站访客数 :</div>
+                                <div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div>
+                            </div>
+                            <div class="webinfo-item">
+                                <div class="webinfo-site-name">本站总访问量 :</div>
+                                <div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <article id="page">
+                <div class="article-container">
+                    <h2>来首网抑云吧</h2>
+                    <meting-js
+                            server="netease"
+                            type="playlist"
+                            id="2464441954"
+                            mutex="true">
+                    </meting-js>
+                    <hr>
+
+                    <h2>技能属性</h2>
+                    <div class="skillbox">
+                        <div class="skillbar">
+                            <div class="skillbar-title"
+                                 style="background: linear-gradient(to right, #FF0066 0%, #FF00CC 100%); width: 1%">
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-bar-percent">1%</div>
+                        </div>
+                        <div class="skillbar">
+                            <div class="skillbar-title"
+                                 style="background: linear-gradient(to right, #9900FF 0%, #CC66FF 100%); width: 2%">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-bar-percent">2%</div>
+                        </div>
+                        <div class="skillbar">
+                            <div class="skillbar-title"
+                                 style="background: linear-gradient(to right, #2196F3 0%, #42A5F5 100%); width: 3%">
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-bar-percent">3%</div>
+                        </div>
+                        <div class="skillbar">
+                            <div class="skillbar-title"
+                                 style="background: linear-gradient(to right, #00BCD4 0%, #80DEEA 100%); width: 4%">
+                                <span>MyBatis</span>
+                            </div>
+                            <div class="skill-bar-percent">4%</div>
+                        </div>
+                        <div class="skillbar">
+                            <div class="skillbar-title"
+                                 style="background: linear-gradient(to right, #4CAF50 0%, #81C784 100%); width: 5%">
+                                <span>Spring</span>
+                            </div>
+                            <div class="skill-bar-percent">5%</div>
+                        </div>
+                        <div class="skillbar">
+                            <div class="skillbar-title"
+                                 style="background: linear-gradient(to right, #FFEB3B 0%, #FFF176 100%); width: 6%">
+                                <span>Docker</span>
+                            </div>
+                            <div class="skill-bar-percent">6%</div>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <h2>一个普通人类的说明书</h2>
+                    <div>
+                        <p>平平无奇的代码搬运工 目前头发还很茂盛 毕竟技术功底和头发茂密程度呈反比 我还是个菜鸡🐔</p>
+                        <p>⚪︎爱好：羽毛球🏸 桌球🎱 戴森球🌐 搞不定就算球</p>
+                        <p>⚪︎价值观：💴💴💴（唯物主义者最高追求境界）</p>
+                        <p>⚪︎世界观：世界与我无观（王建国 这盛世如你所愿）</p>
+                        <p>⚪︎人生观：做个简简单单的普通人 有房🏠有车🚗有钞票💴</p>
+                        <p>⚪︎愿望：伽马射线暴扫过地球🌏之前告诉我到底有没有外星人👽</p>
+                        <p>其他未尽事宜请弹窗咨询📲</p>
+                    </div>
+
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer id="footer">
+        <div id="footer-wrap">
+            <div class="footer">本站已勉强运行:
+<span id="momk">94天15小时24分26秒</span>
+<script language="javascript">
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("2021/05/9 10:00:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(daysold-e_daysold)*-24;
+hrsold=Math.floor(e_hrsold);
+e_minsold=(hrsold-e_hrsold)*-60;
+minsold=Math.floor((hrsold-e_hrsold)*-60);
+seconds=Math.floor((minsold-e_minsold)*-60);
+momk.innerHTML=daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒" ;
+}
+show_date_time();
+</script>
+<style>
+#momk{animation:change 10s infinite;font-weight:800; }
+@keyframes change{0%{color:#5cb85c;}25%{color:#556bd8;}50%{color:#e40707;}75%{color:#66e616;}100% {color:#67bd31;}}
+</style>
+<br>
+	Copyright © 2020 <a href="http://www.baidu.com/" target="_blank">jiu</a> All Rights Reserved.
+			
+			
+			
+			
+			
+        </div>
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script async src="http://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.js" type="module"></script>
+<!-- aplayer、meting -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<!--   一言、今日诗词   -->
+<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<!--鼠标点击效果-->
+<script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
+
+<script type="text/javascript">
+    console.clear();
+    console.log("%c Github %c", "background:#24272A; color:#ffffff", "", "https://github.com/xiaojiube");
+    console.log("%c 版本号: %c", "background:#24272A; color:#ffffff", "", "1.0.0");
+
+
+    (function ($) {
+        $.fn.snow = function (options) {
+            var $flake = $('<div id="snowbox" />').css({
+                    'position': 'absolute',
+                    'z-index': '9999',
+                    'top': '-50px'
+                }).html('&#10052;'),
+                documentHeight = $(document).height(),
+                documentWidth = $(document).width(),
+                defaults = {
+                    minSize: 5,
+                    maxSize: 50,
+                    newOn: 800,
+                    flakeColor: "#AFDAEF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
+                },
+                options = $.extend({}, defaults, options);
+            var interval = setInterval(function () {
+                var startPositionLeft = Math.random() * documentWidth - 100,
+                    startOpacity = 0.5 + Math.random(),
+                    sizeFlake = options.minSize + Math.random() * options.maxSize,
+                    endPositionTop = documentHeight - 200,
+                    endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
+                    durationFall = documentHeight * 10 + Math.random() * 5000;
+                $flake.clone().appendTo('body').css({
+                    left: startPositionLeft,
+                    opacity: startOpacity,
+                    'font-size': sizeFlake,
+                    color: options.flakeColor
+                }).animate({
+                    top: endPositionTop,
+                    left: endPositionLeft,
+                    opacity: 0.2
+                }, durationFall, 'linear', function () {
+                    $(this).remove()
+                });
+            }, options.newOn);
+        };
+    })(jQuery);
+    $(function () {
+        $.fn.snow({
+            minSize: 5, /* 定义雪花最小尺寸 */
+            maxSize: 50,/* 定义雪花最大尺寸 */
+            newOn: 800  /* 定义密集程度，数字越小越密集 */
+        });
+    });
+</script>
+</body>
+</html>
